@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link href="/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+	<head>
+		<title>Practice3</title>
+		<meta charset="utf-8"></meta>
+	</head>
+	<body>
+		<form action="#" th:action="@{/output}" th:object="${inputForm}" method="post">
+			<p>Name: <input type="text" th:field="*{name}" /></p>
+			<p><input type="submit" value="Submit" /></p>
+		</form>
+	</body>
+</html>
